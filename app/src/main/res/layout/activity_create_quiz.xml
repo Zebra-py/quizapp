@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateQuizActivity">
+
+    <EditText
+        android:id="@+id/questionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:hint="Введите вопрос"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/option1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Вариант ответа 1"
+        android:minHeight="48dp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/option2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/option1EditText"
+        android:layout_marginTop="16dp"
+        android:hint="Вариант ответа 2"
+        android:minHeight="48dp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/option3EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/option2EditText"
+        android:layout_marginTop="16dp"
+        android:hint="Вариант ответа 3"
+        android:minHeight="48dp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/option4EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/option3EditText"
+        android:layout_marginTop="16dp"
+        android:hint="Вариант ответа 4"
+        android:minHeight="48dp"
+        android:padding="8dp" />
+
+    <RadioGroup
+        android:id="@+id/optionsRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/option4EditText"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/option1RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/option2RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/option3RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <RadioButton
+            android:id="@+id/option4RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/addQuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/optionsRadioGroup"
+        android:layout_marginTop="16dp"
+        android:text="Добавить вопрос" />
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addQuestionButton"
+        android:layout_marginTop="16dp"
+        android:text="Завершить" />
+</RelativeLayout>
